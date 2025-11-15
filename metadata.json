@@ -1,0 +1,6 @@
+{
+  "name": "Copy of AI Study Guide Generator",
+  "description": "An application that generates detailed and visually appealing study guides from user-uploaded images, PDFs, and audio files using Gemini AI. It features a professional design, multi-language support, and includes functionality to export the guide as a high-quality PDF.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
