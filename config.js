@@ -1,4 +1,4 @@
-const PLACEHOLDER = 'PASTE_YOUR_GEMINI_API_KEY_HERE';
+const PLACEHOLDER = 'AIzaSyBATF2JFP94iLQB60zOrBHnrou8eT0zOH4';
 
 // Allow overriding the key at runtime by setting window.GEMINI_API_KEY before the app loads.
 const runtimeKey =

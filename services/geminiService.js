@@ -74,8 +74,13 @@ const fileToGenerativePart = (base64Data, mimeType) => {
   };
 };
 
+const MODEL_BY_MODE = {
+  [StudyMode.Normal]: 'gemini-2.5-flash',
+  [StudyMode.Pro]: 'gemini-2.5-pro',
+};
+
 export const generateStudyGuide = async (files, length, mode, language, customPrompt) => {
-  const modelName = 'gemini-2.5-flash';
+  const modelName = MODEL_BY_MODE[mode] || MODEL_BY_MODE[StudyMode.Normal];
 
   if (!Array.isArray(files) || files.length === 0) {
     throw new Error('Please upload at least one file.');
